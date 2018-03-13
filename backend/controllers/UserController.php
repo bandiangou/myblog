@@ -125,4 +125,8 @@ class UserController extends Controller
     public function actionTest(){
     	echo 'hi';
     }
+
+    public function actionTest2(){
+    	echo 'hello';
+    }
 }
