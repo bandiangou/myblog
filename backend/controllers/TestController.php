@@ -36,6 +36,6 @@ class TestController extends Controller
     }
 
     public function actionTest1(){
-        echo 'hi';
+        echo 'test1';
     }
 }
