@@ -12,29 +12,11 @@ use common\models\AdminLoginForm;
  */
 class TestController extends Controller
 {
-    /**
-     * @inheritdoc
-     */
-    public function behaviors()
-    {
-        return [
-            'access' => [
-                'class' => AccessControl::className(),
-                'rules' => [
-                    [
-                        'actions' => ['login', 'error'],
-                        'allow' => true,
-                    ],
-                    [
-                        'actions' => ['logout', 'index'],
-                        'allow' => true,
-                        'roles' => ['@'],
-                    ],
-                ],
-            ],
-        ];
-    }
 
+    public function actionTest5(){
+
+	echo 'test5';
+    }
     
 
     public function actionIndex()
@@ -54,6 +36,6 @@ class TestController extends Controller
     }
 
     public function actionTest1(){
-        echo 'hi';
+        echo 'test1';
     }
 }
